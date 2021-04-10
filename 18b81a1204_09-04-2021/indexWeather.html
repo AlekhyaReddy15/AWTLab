@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather API</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="weather.js"></script>
+    <style>
+        table,th,td{
+            border:2px solid black; 
+            border-collapse:collapse;
+            text-align: center;
+            padding:10px;
+            width:45%;
+            
+        }
+        button{
+            border-radius: 5px;
+            padding:8px;
+        }
+    </style>
+</head>
+<body>
+    <br>
+
+    <center>
+        <h1>Get Weather Details</h1>
+        <br>
+        <b>Enter City : </b>&nbsp;<input type="text" id="c"><br><br>
+        <button onclick="display()" class="bg-primary text-white"><b>View Details</b></button>
+        <br><br>
+        <div id="tempTable" >
+        </div>
+    </center>
+</body>
+</html>

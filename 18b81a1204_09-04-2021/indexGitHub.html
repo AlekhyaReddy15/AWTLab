@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="github.js"></script>
+    <style>
+        table,th,td{
+            border:2px solid black; 
+            border-collapse:collapse;
+            text-align: center;
+            padding:10px;
+            width:35%;
+            
+        }
+        button{
+            border-radius: 5px;
+            padding:8px;
+        }
+    </style>
+</head>
+<body>
+    <br><br>
+    <center>
+        <h1>GitHub Repositories</h1><br>
+        <b>Enter username : </b>&nbsp;<input type="text" id="u">
+        <br><br>
+        <button onclick="display()" class="bg-primary text-white"><b>Click here to get repositories</b></button>
+        <br><br>
+        <div id="tempTable">
+
+        </div>
+    </center>
+</body>
+</html>
