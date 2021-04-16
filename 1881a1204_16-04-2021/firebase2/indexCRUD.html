@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Operations</title>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="crudOperations.js"></script>
+    <style>
+        .container{
+            width:35%;
+            margin-top:6%;
+        }
+        .c1{
+            margin-left:29%;
+           
+        }
+        table,th,td{
+            padding:10px;
+            margin-left:5%;
+        }
+        button{
+            border-radius: 5px;
+            width:100%;
+        }
+    </style>
+</head>
+<body onload="displayUsers()">
+
+    <div class="container">
+        
+        <table >
+            <tr>
+                <td colspan="2"><h1>CRUD Operations</h1></td>
+            </tr>
+            <tr>
+                <th>Enter Student Name</th>
+                <td>
+                    <input type="text" id="uname">
+                </td>
+            </tr>
+            <tr>
+                <th>Enter Student RollNo</th>
+                <td >
+                    <input type="text" id="rollno">
+                </td>
+            </tr>
+            <tr>
+                <th>Enter Student Branch</th>
+                <td >
+                    <input type="text" id="branch">
+                </td>
+            </tr>
+            <tr>
+                <td><button onclick="insertUser()" class="bg-success text-white">Insert</button></td>
+                <td><button onclick="resetValues()" class="bg-primary text-white">Cancel</button></td> 
+            </tr>
+            <tr>
+             
+               <td colspan="2"><button onclick="displayUsers()" class="bg-secondary text-white">Display</button></td> 
+                
+            </tr>
+        </table>
+    </div>
+    <br>
+    <div class="c1" id="display" >
+
+    </div>
+</body>
+</html>

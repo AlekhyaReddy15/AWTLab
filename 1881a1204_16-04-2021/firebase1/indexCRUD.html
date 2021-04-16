@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Operations</title>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="crudOperations.js"></script>
+    <style>
+        .container{
+            margin-left:35%;
+            margin-top:5%;
+        }
+        .c1{
+            margin-left:37%;
+        }
+        table,th,td{
+            width:40%;
+           
+            padding:10px;
+        }
+        button{
+            border-radius: 5px;
+            width:100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <table >
+            <tr>
+                <td colspan="4"><h1>Firebase CRUD Demo</h1></td>
+            </tr>
+            <tr>
+                <th colspan="2">
+                    Enter Username
+                </th>
+                <td colspan="2">
+                    <input type="text" id="uname">
+                </td>
+            </tr>
+            <tr><td></td></tr>
+            <tr>
+                <th colspan="2">
+                    Enter Email
+                </th>
+                <td colspan="2">
+                    <input type="text" id="email">
+                </td>
+            </tr>
+            <tr>
+                <td><button onclick="insertUser()" class="bg-success text-white">Insert</button></td>
+                <td><button onclick="deleteUser()" class="bg-danger text-white">Delete</button></td>          
+                <td><button onclick="updateUser()" class="bg-warning text-white">Update</button></td>
+                <td><button onclick="displayUsers()" class="bg-primary text-white">Display</button></td>  
+                
+            </tr>
+        </table>
+    </div>
+    <br><br>
+    <div class="c1" id="display">
+
+    </div>
+</body>
+</html>
