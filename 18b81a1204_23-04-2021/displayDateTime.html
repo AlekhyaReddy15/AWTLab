@@ -36,7 +36,7 @@
             min=check(min);
             sec=check(sec);
             
-            document.getElementById("clock").innerHTML="DATE : "+d.getDay()+"-"+d.getMonth()+"-"+d.getFullYear()+"<br><br>TIME : "+hr+":"+min+":"+sec+" "+ap;            
+            document.getElementById("clock").innerHTML="DATE : "+d.getDate()+"-"+(d.getMonth()+1)+"-"+d.getFullYear()+"<br><br>TIME : "+hr+":"+min+":"+sec+" "+ap;            
             var time = setTimeout(function(){
                                     startTime() 
                                   }, 1000);
